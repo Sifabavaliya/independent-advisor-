@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container .cost {
+  padding: 60px 154px;
+}
+.container .cost .cost-description {
+  margin-bottom: 32px;
+}
+
+.container .cost .cost-description h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50.4px;
+  padding-right: 101px;
+  font-family: "Indy Sans", "Adjusted Indy Sans Fallback", sans-serif;
+}
+
+.container .cost .cost-description h2 span {
+  color: rgba(236, 26, 46, 1);
+}
+
+.container .cost .cost-deatails {
+  max-width: 730px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 24px 20px;
+  padding: 24px 20px;
+  border: 1px solid rgba(233, 233, 233, 1);
+  border-radius: 4px;
+}
+
+.container .cost .cost-deatails .detail .heading {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-family: "Indy Sans", "Adjusted Indy Sans Fallback", sans-serif;
+}
+
+.btn {
+  padding: 12px 54px;
+  border-radius: 4px;
+  background: rgba(236, 26, 46, 1);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  box-shadow: none;
+  font-family: "Indy Sans", "Adjusted Indy Sans Fallback", sans;
+}
+
+.btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.container .cost .cost-deatails .detail .filter select {
+  padding: 12px;
+  font-size: 14px;
+}
+
+.detail {
+  align-self: end;
+}

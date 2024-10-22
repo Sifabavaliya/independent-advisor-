@@ -8,41 +8,42 @@
   max-width: 1110px;
   width: 100%;
   margin: 0 auto;
-}
-
-.container .cost {
   padding: 60px 154px;
 }
-.container .cost .cost-description {
-  margin-bottom: 32px;
+
+.mini-container {
+  max-width: 562px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container .cost .cost-description h2 {
-  font-weight: 700;
-  font-size: 42px;
+  font-size: 41px;
   line-height: 50.4px;
-  padding-right: 101px;
-  font-family: "Indy Sans", "Adjusted Indy Sans Fallback", sans-serif;
+  font-family: "Indy Serif", "Adjusted Indy Sans Fallback", "sans-serif";
 }
 
 .container .cost .cost-description h2 span {
   color: rgba(236, 26, 46, 1);
 }
 
-.container .cost .cost-deatails {
-  max-width: 730px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 24px 20px;
+.container .cost {
   padding: 24px 20px;
   border: 1px solid rgba(233, 233, 233, 1);
   border-radius: 4px;
+  max-width: 730px;
 }
 
-.container .cost .cost-deatails .detail .heading {
+.container .cost .cost-deatails {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 24px 20px;
+  margin: 32px 0;
+}
+
+.container .cost .cost-deatails .detail .heading h4 {
   font-size: 20px;
   line-height: 24px;
-  font-weight: 500;
   padding-bottom: 10px;
   font-family: "Indy Sans", "Adjusted Indy Sans Fallback", sans-serif;
 }
@@ -50,8 +51,8 @@
 .btn {
   padding: 12px 54px;
   border-radius: 4px;
-  background: rgba(236, 26, 46, 1);
   color: white;
+  white-space: nowrap;
   font-size: 18px;
   font-weight: 500;
   display: flex;
@@ -59,7 +60,11 @@
   gap: 7px;
   border: none;
   box-shadow: none;
-  font-family: "Indy Sans", "Adjusted Indy Sans Fallback", sans;
+  font-family: "Indy Sans", "Adjusted Indy Sans Fallback", "sans";
+}
+
+.org-btn {
+  background: rgba(236, 26, 46, 1);
 }
 
 .btn svg {
@@ -70,8 +75,211 @@
 .container .cost .cost-deatails .detail .filter select {
   padding: 12px;
   font-size: 14px;
+  width: 100%;
 }
 
 .detail {
   align-self: end;
+}
+
+.summary-section {
+  border: 1px solid rgba(233, 233, 233, 1);
+  background-color: white;
+}
+
+.blur-effect {
+  filter: blur(7px);
+}
+
+.summary-cost {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.result-cost {
+  border: 1px solid rgba(32, 126, 132, 1);
+  border-radius: 4px;
+  padding: 12px 43px;
+}
+
+.result-cost--desc {
+  display: flex;
+  gap: 8px;
+}
+
+.summary-heading h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33px;
+}
+
+.summary-cost .result-cost .result-cost--desc h5 {
+  color: rgba(32, 126, 132, 1);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.result-cost--price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 32px;
+}
+
+.result-cost--price svg {
+  width: 13px;
+}
+
+.install {
+  margin: -80px 0px;
+}
+
+.install h3 {
+  text-align: center;
+  font-size: 23px;
+  margin-left: 80px;
+}
+
+.saving-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 140px 0px 0px;
+  margin-bottom: 31px;
+}
+
+.saving-section .info h4 {
+  font-family: "Indy Sans Web";
+  font-size: 22px;
+}
+
+.saving-section .drop-down_icon.active svg {
+  transform: rotate(178deg);
+}
+
+.compare-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  gap: 16px;
+}
+
+.deco {
+  border: 1px solid rgba(233, 233, 233, 1);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.compare-section--left p {
+  font-size: 14px;
+  color: rgba(122, 122, 122, 1);
+  line-height: 22px;
+}
+
+.compare-section--right {
+  padding: 46px 22px;
+}
+
+.compare-section--right h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.black-btn {
+  background-color: black;
+  padding: 11px 21px;
+}
+
+.savings {
+  padding: 12px;
+  border: 1px solid rgba(233, 233, 233, 1);
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saving-section--desc_amount {
+  border-top: 1px solid rgba(233, 233, 233, 1);
+  padding-top: 4px;
+}
+
+.heading h4 {
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.flex p {
+  font-size: 18px;
+  padding-bottom: 4px;
+  color: rgba(53, 53, 51, 1);
+}
+
+.more-info {
+  background-color: rgba(244, 244, 244, 1);
+  padding: 12px;
+}
+
+.more-info p {
+  display: flex;
+  align-items: center;
+}
+
+.intro p {
+  font-size: 16px;
+  color: rgba(122, 122, 122, 1);
+  line-height: 19px;
+  text-align: justify;
+}
+
+.calculate-saving-section {
+  display: none;
+}
+
+.calculate-saving-section.active {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0px;
+  }
+
+  .container .cost .cost-deatails {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .summary-cost {
+    display: block;
+  }
+
+  .install {
+    margin: -222px 0px;
+  }
+
+  .install h3 {
+    margin: 72px 32px;
+  }
+
+  .saving-section {
+    padding: 279px 0px 0px;
+  }
+
+  .compare-section {
+    display: block;
+  }
+}
+
+@media (max-width: 441px) {
+  .compare-section--right h5 {
+    display: none;
+  }
 }

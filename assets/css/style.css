@@ -279,7 +279,24 @@
 }
 
 @media (max-width: 441px) {
+  .compare-section--left {
+    display: none;
+    border: none;
+  }
+
+  .compare-section--right {
+    border: none;
+  }
+
   .compare-section--right h5 {
     display: none;
+  }
+
+  .black-btn {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
   }
 }

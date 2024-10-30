@@ -1,18 +1,12 @@
 document.getElementById("calculate").addEventListener("click", (e) => {
-  document.getElementById("install").innerHTML = "";
-  document.querySelector("#blur").style.filter = "none";
+  document.getElementById("install").classList.add("hide");
+  document.getElementById("blur").classList.remove("blur-effect");
+  document.getElementById("activate").classList.add("show");
+  document.getElementById("display-compare-section").classList.add("show");
 });
-
-// function active() {
-//   var x = document.getElementById("active");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
-// }
 
 document.getElementById("activate").addEventListener("click", (e) => {
   document.getElementById("active").classList.toggle("active");
   document.getElementById("activate").classList.toggle("active");
+  document.getElementById("actives").classList.toggle("active");
 });
